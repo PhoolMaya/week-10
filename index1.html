@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Contact Data</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h3 class="mb-3">Student Contact Form</h3>
+        <form id="Emergency FOrm">
+            <div class="form-group">
+                <label for="name">First Name:</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" class="form-control" id="branch" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="text" class="form-control" id="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Guardian Contact:</label>
+                <input type="text" class="form-control" id="guardianContact" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addRow()">Add</button>
+        </form>
+        <!--To create table-->
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Branch</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                    <th>Guardian Contact</th>
+                </tr>
+            </thead>
+            <tbody id="studentContactTableBody"></tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS and some script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    
+    </body>
+</html>
